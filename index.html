@@ -1,0 +1,256 @@
+<!doctype html><html><head></head><body><!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sadique Ansari - Social Media</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Bootstrap Icons -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+	<style>
+		:root {
+			--bg: #0f1724;
+			/* page background */
+			--card: #0b1220;
+			/* card background */
+			--accent: #06b6d4;
+			/* accent color */
+			--muted: #9aa4b2;
+		}
+
+		body {
+			background: linear-gradient(180deg, #071025 0%, #061827 100%);
+			color: #e6eef6;
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 2rem;
+			font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+		}
+
+		.link-card {
+			width: 100%;
+			max-width: 420px;
+			background: var(--card);
+			border-radius: 18px;
+			box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
+			padding: 1.6rem;
+			text-align: center;
+		}
+
+		.avatar {
+			width: 96px;
+			height: 96px;
+			border-radius: 50%;
+			object-fit: cover;
+			border: 3px solid rgba(255, 255, 255, 0.06);
+			margin: auto;
+			display: block;
+			box-shadow: 0 6px 18px rgba(6, 11, 29, 0.6);
+		}
+
+		.name {
+			font-weight: 600;
+			margin-top: .8rem;
+			font-size: 1.1rem;
+		}
+
+		.sub {
+			color: var(--muted);
+			font-size: .9rem;
+			margin-bottom: 1rem;
+		}
+
+		.btn-linktree {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: .6rem;
+			width: 100%;
+			padding: 0.9rem 1rem;
+			margin: 0.45rem 0;
+			border-radius: 12px;
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+			border: 1px solid rgba(255, 255, 255, 0.03);
+			color: inherit;
+			text-decoration: none;
+			transition: transform .12s ease, box-shadow .12s ease;
+		}
+
+		.btn-linktree:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 6px 18px rgba(4, 9, 20, 0.5);
+		}
+
+		.btn-left {
+			display: flex;
+			align-items: center;
+			gap: .75rem;
+			flex: 1;
+			text-align: left;
+		}
+
+		.btn-left i {
+			font-size: 1.15rem;
+			opacity: .95;
+		}
+
+		.btn-label {
+			font-weight: 600;
+			font-size: 0.98rem;
+		}
+
+		.btn-desc {
+			font-size: .82rem;
+			color: var(--muted);
+		}
+
+		.small-ghost {
+			background: transparent;
+			border: none;
+			color: var(--muted);
+			font-size: 0.95rem;
+		}
+
+		footer {
+			margin-top: 1rem;
+			color: var(--muted);
+			font-size: .82rem;
+			text-align: center;
+		}
+
+		@media (max-width:420px) {
+			.link-card {
+				padding: 1.2rem;
+				border-radius: 14px;
+			}
+
+			.avatar {
+				width: 84px;
+				height: 84px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<main class="link-card" role="main" aria-labelledby="profileName">
+		<!-- Replace the image src, name, and bio as needed -->
+		<img class="avatar" src="./assets/images/avatar.jpg" alt="Profile picture">
+		<h1 id="profileName" class="name">Sadique Ansari</h1>
+		<div class="sub">Learn. Create. Share — Graphic Designer</div>
+
+		<!-- Links: replace href & visible texts with your own URLs and labels -->
+		<a class="btn-linktree" href="https://example.com/link1" target="_blank" rel="noopener"
+			data-link="https://example.com/link1">
+			<div class="btn-left">
+				<i class="bi bi-globe"></i>
+				<div>
+					<div class="btn-label">Website</div>
+					<div class="btn-desc">Portfolio & services</div>
+				</div>
+			</div>
+			<button class="small-ghost" type="button" onclick="copyLink('https://example.com/link1')" aria-label="Copy website link"><i class="bi bi-clipboard"></i></button>
+		</a>
+
+		<a class="btn-linktree" href="https://www.instagram.com/sadiq.ans_?igsh=MW9tOW54cDN4aDJ0dw==" target="_blank"
+			rel="noopener" data-link="https://www.instagram.com/sadiq.ans_?igsh=MW9tOW54cDN4aDJ0dw==">
+			<div class="btn-left">
+				<i class="bi bi-instagram"></i>
+				<div>
+					<div class="btn-label">Instagram</div>
+					<div class="btn-desc">Visuals & stories</div>
+				</div>
+			</div>
+			<button class="small-ghost" type="button" onclick="copyLink('https://www.instagram.com/sadiq.ans_?igsh=MW9tOW54cDN4aDJ0dw==')" aria-label="Copy Instagram link"><i class="bi bi-clipboard"></i></button>
+		</a>
+
+		<a class="btn-linktree"
+			href="https://www.linkedin.com/in/sadique-ansari-1a6176321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+			target="_blank" rel="noopener"
+			data-link="https://www.linkedin.com/in/sadique-ansari-1a6176321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+			<div class="btn-left">
+				<i class="bi bi-linkedin"></i>
+				<div>
+					<div class="btn-label">LinkedIn</div>
+					<div class="btn-desc">Professional profile</div>
+				</div>
+			</div>
+			<button class="small-ghost" type="button" onclick="copyLink('https://www.linkedin.com/in/sadique-ansari-1a6176321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app')" aria-label="Copy LinkedIn link"><i class="bi bi-clipboard"></i></button>
+		</a>
+
+		<a class="btn-linktree" href="https://youtube.com/@sadiq.ans59?si=YQZ2ijwnsauB4sWe" target="_blank"
+			rel="noopener" data-link="https://youtube.com/@sadiq.ans59?si=YQZ2ijwnsauB4sWe">
+			<div class="btn-left">
+				<i class="bi bi-youtube"></i>
+				<div>
+					<div class="btn-label">YouTube</div>
+					<div class="btn-desc">Videos & tutorials</div>
+				</div>
+			</div>
+			<button class="small-ghost" type="button" onclick="copyLink('https://youtube.com/@sadiq.ans59?si=YQZ2ijwnsauB4sWe')" aria-label="Copy YouTube link"><i class="bi bi-clipboard"></i></button>
+		</a>
+
+		<a class="btn-linktree" href="mailto:sadiq.ans59@email.com" target="_blank" rel="noopener"
+			data-link="mailto:sadiq.ans59@email.com">
+			<div class="btn-left">
+				<i class="bi bi-envelope"></i>
+				<div>
+					<div class="btn-label">Email</div>
+					<div class="btn-desc">Get in touch</div>
+				</div>
+			</div>
+			<button class="small-ghost" type="button" onclick="copyLink('mailto:sadiq.ans59@email.com')" aria-label="Copy Email link"><i class="bi bi-clipboard"></i></button>
+		</a>
+
+		<footer>Made with ♥ by Sadique Ansari</footer>
+	</main>
+
+	<!-- Bootstrap JS (optional but included for future use) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+	<script>
+		// Copy provided URL to clipboard with small visual feedback
+    async function copyLink(url){
+      try{
+        await navigator.clipboard.writeText(url);
+        // temporary toast-like feedback using the browser's native alert is avoided.
+        // Instead create a small floating confirmation element:
+        showToast('Link copied to clipboard');
+      }catch(e){
+        showToast('Copy failed — open link to use it');
+      }
+    }
+
+    function showToast(message){
+      const t = document.createElement('div');
+      t.textContent = message;
+      Object.assign(t.style, {
+        position:'fixed',
+        left:'50%',
+        transform:'translateX(-50%)',
+        bottom:'28px',
+        background:'rgba(10,12,18,0.9)',
+        color:'#fff',
+        padding:'10px 14px',
+        borderRadius:'10px',
+        boxShadow:'0 6px 18px rgba(2,6,23,0.6)',
+        zIndex:9999,
+        fontSize:'0.95rem',
+      });
+      document.body.appendChild(t);
+      setTimeout(()=> t.style.opacity = '0', 1600);
+      setTimeout(()=> t.remove(), 2000);
+    }
+
+    // Optional: make entire anchor copyable on long-press (mobile) — not required.
+	</script>
+</body>
+
+</html></body><html>
