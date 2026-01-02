@@ -18,13 +18,12 @@
 
 <body>
 	<main class="link-card" role="main" aria-labelledby="profileName">
-		<!-- Replace the image src, name, and bio as needed -->
 		<img class="avatar" src="./assets/images/avatar.jpg" alt="Profile picture">
 		<h1 id="profileName" class="name">Sadique Ansari</h1>
 		<div class="sub">Graphic Designer</div>
 
-		<!-- Links: replace href & visible texts with your own URLs and labels -->
-		<a class="btn-linktree" href="https://sadiq-ans.github.io/portfolio.github.io/" target="_blank" rel="noopener" data-link="https://sadiq-ans.github.io/portfolio.github.io/">
+		<a class="btn-linktree" href="https://sadiq-ans.github.io/portfolio.github.io/" target="_blank" rel="noopener"
+			data-link="https://sadiq-ans.github.io/portfolio.github.io/">
 			<div class="btn-left">
 				<i class="bi bi-globe"></i>
 				<div>
@@ -82,16 +81,12 @@
 		<footer>Made with ♥ by Sadique Ansari</footer>
 	</main>
 
-	<!-- Bootstrap JS (optional but included for future use) -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 	<script>
-		// Copy provided URL to clipboard with small visual feedback
 		async function copyLink(url) {
 			try {
 				await navigator.clipboard.writeText(url);
-				// temporary toast-like feedback using the browser's native alert is avoided.
-				// Instead create a small floating confirmation element:
 				showToast('Link copied to clipboard');
 			} catch (e) {
 				showToast('Copy failed — open link to use it');
@@ -118,8 +113,6 @@
 			setTimeout(() => t.style.opacity = '0', 1600);
 			setTimeout(() => t.remove(), 2000);
 		}
-
-    // Optional: make entire anchor copyable on long-press (mobile) — not required.
 	</script>
 </body>
 
